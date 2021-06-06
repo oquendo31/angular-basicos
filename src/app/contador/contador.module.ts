@@ -6,12 +6,8 @@ import { contadorComponent } from './contador/contador.components';
 
 @NgModule({
   declarations: [contadorComponent],
-  exports:[
-    contadorComponent
-],
-  imports: [
-    CommonModule
-  ],
-  
+  exports: [contadorComponent],
+  imports: [CommonModule],
+
 })
 export class ContadorModule { }
