@@ -14,17 +14,15 @@ export class AgregarComponent {
     nombre: '',
     poder: 0
   }
-  constructor( private dbzService: DbzService){
+  constructor(private dbzService: DbzService) {
 
   }
-
-  // @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
 
   agregar() {
     if (this.nuevo.nombre.trim().length === 0) {
       return;
     }
-    // this.onNuevoPersonaje.emit(this.nuevo)
+
     this.dbzService.agregarPersonaje(this.nuevo);
 
     this.nuevo = {
